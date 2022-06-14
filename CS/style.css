@@ -54,6 +54,15 @@
   font-size: 80%;
 }
 
-.news_list div {
-  text-align: center;
+.news_list div {}
+
+.news_list ul {
+  list-style-type: none;
+}
+
+.news_list li a {
+  display: flex;
+  gap: 25px;
+  text-decoration: none;
+  margin-left: auto;
 }
