@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/*
+Base style
+*/
+body {
+  font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: 333;
+}
+
 #top div {
   margin: 50px 50px 0px;
 }
@@ -31,7 +41,7 @@
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: bold;
   margin: 20px 0;
 }
 
@@ -48,10 +58,11 @@
 
 .s_box li {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
   list-style: none;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #3399cc;
+  border-radius: 5px;
   width: 400px;
   padding: 20px 0;
   margin: 20px;
@@ -92,8 +103,9 @@
 .news_list ul {
   list-style-type: none;
   width: fit-content;
-  border: 1px solid black;
-  width: 500px;
+  border: 1px solid #3399cc;
+  border-radius: 5px;
+  width: 700px;
   padding: 30px 100px
 }
 
@@ -113,9 +125,15 @@
 }
 
 .btn_stn a {
-  border: 1px solid black;
+  border: 1px solid #3399cc;
+  border-radius: 5px;
   padding: 10px;
   text-decoration: none;
+}
+
+.footer_line {
+  border-top: 1px solid #cccccc;
+  margin: 50px 0;
 }
 
 .w_inner nav ul {
