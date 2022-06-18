@@ -1,3 +1,3 @@
-①各ページのphp化
-②header / footerの読み込み (<?php get_header() ;?> / <?php get_footer() ;?>)
-③header / footerに<?php wp_footer(); ?>の追加
+<p>①各ページのphp化<br>
+②front_pageにheader・footerの読み込み<br>
+③header・footerにwp_footerの追加<p>
