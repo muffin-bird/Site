@@ -30,7 +30,7 @@
                 </a>
              </li>
              <?php endwhile; endif; ?><!-- /ループ終わり -->
-            <div class="btn_stn"><a href="">一覧をみる</a></div>
+            <div class="btn_stn"><a href="<?php bloginfo('url') ;?>/news">一覧をみる</a></div>
           </ul>
         </div>
       </section>
