@@ -4,13 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?php bloginfo('template_url') ;?>/sanitize.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url') ;?>/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="<?php bloginfo('template_url') ;?>/https://fonts.googleapis.com">
+  <link rel="preconnect" href="<?php bloginfo('template_url') ;?>/https://fonts.gstatic.com" crossorigin>
+  <link href="<?php bloginfo('template_url') ;?>/https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <title>ホームページ制作会社</title>
   <?php wp_head(); ?>
 </head>
-
 <body>
   <header><!-- ここから ヘッダー -->
     <div class="w_inner">
