@@ -1,4 +1,5 @@
-<p>①各ページのphp化<br>
-②index.phpにheader・footerの読み込み<br>
-③header・footerにwp_footerの追加<br>
-④テンプレートタグでパスの置き換え<br>
+<h2>WP</h1>
+<p>①共通部分のパーツ化&パーツの読み込み<br>
+②テーマのアップ・有効化<br>
+③テンプレートタグでパスの置き換え<br>
+④投稿データの出力
