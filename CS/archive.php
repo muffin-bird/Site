@@ -1,6 +1,6 @@
 <?php get_header() ;?>
 
-<div id="content" class="w_inner">
+<div id="content" class="page_wrap w_inner">
           <ul>
              <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- ループ開始 -->
              <li>
