@@ -10,6 +10,7 @@
   <title>ホームページ制作会社</title>
   <?php wp_head(); ?>
 </head>
+
 <body>
   <header><!-- ここから ヘッダー -->
     <div class="w_inner">
@@ -27,9 +28,32 @@
         </ul>
       </nav>
     </div>
-    <div class="header_img">
+    <?php if(is_front_page()){ ?>
+    <div class="header_img"><!-- TOPページ用 -->
       <img src="<?php bloginfo('template_url') ;?>/img/header_img.jpg" alt="image">
     </div>
+    <?php }else if(is_page('service')){ ?>
+    <div class="header_img"><!-- サービス用 -->
+      <img src="<?php bloginfo('template_url') ;?>/img/header_service.jpg" alt="image">
+    </div>
+    <?php }else if(is_page('price')){ ?>
+    <div class="header_img"><!-- 料金案内用 -->
+      <img src="<?php bloginfo('template_url') ;?>/img/header_price.jpg" alt="image">
+    </div>
+    <?php }else if(is_page('company')){ ?>
+    <div class="header_img"><!-- 会社概要用 -->
+      <img src="<?php bloginfo('template_url') ;?>/img/header_company.jpg" alt="image">
+    </div>
+    <?php }else if(is_page('contact')){ ?>
+    <div class="header_img"><!-- お問い合わせ用 -->
+      <img src="<?php bloginfo('template_url') ;?>/img/header_contact.jpg" alt="image">
+    </div>
+    <?php }else if(is_archive()){ ?>
+    <div class="header_img"><!-- ニュース用 -->
+      <img src="<?php bloginfo('template_url') ;?>/img/header_news.jpg" alt="image">
+    </div>
+    <?php }else{} ?>
+
   </header><!-- ここまで ヘッダー -->
   
-  <div id="wrap">
+  <div id="wrap">   
