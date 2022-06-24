@@ -1,13 +1,15 @@
 <?php get_header() ;?>
 
 <div id="content" class="page_wrap w_inner">
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- ループ開始 -->
-  <h1><?php the_title(); ?></h1>
-  <div class="page_container">
-    <?php the_content(); ?>
-  </div>
-  <?php endwhile; endif; ?><!-- /ループ終わり -->
 
+  <div id="main">
+    <div class="head"><?php the_title() ;?>
+    <ul>
+      <li>ホームページ制作・・・50万</li>
+      <li>ランディングページ制作・・・20万</li>
+      <li>SEOコンサルティング・・・10万/月</li>
+    </ul>
+  </div>
 </div>
 
 <?php get_footer() ;?>

@@ -1,13 +1,21 @@
 <?php get_header() ;?>
 
 <div id="content" class="page_wrap w_inner">
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- ループ開始 -->
-  <h1><?php the_title(); ?></h1>
-  <div class="page_container">
-    <?php the_content(); ?>
-  </div>
-  <?php endwhile; endif; ?><!-- /ループ終わり -->
 
+  <div id="main">
+    <div class="head"><?php the_title() ;?></div>
+    会社概要が入ります
+    <table>
+      <tr>
+        <td class="td_left">社名</td>
+        <td class="td_right">XXXXXXXXXX</td>
+      </tr>
+      <tr>
+        <td class="td_left">創立</td>
+        <td class="td_right">2000年1月10日</td>
+      </tr>
+    </table>
+  </div>
 </div>
 
 <?php get_footer() ;?>
