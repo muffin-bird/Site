@@ -9,7 +9,7 @@ body {
   font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif";
   font-size: 15px;
   line-height: 1.5;
-  color: 333;
+  color: #333333;
 }
 
 /*
@@ -45,10 +45,6 @@ header
 /*
 content
 */
-
-.page_wrap {
-  margin-left: 50px;
-}
 
 .sec_head {
   display: flex;
@@ -136,6 +132,7 @@ footer
 }
 
 .w_inner nav ul {
+  display: inline-block;
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -152,4 +149,56 @@ footer
 #copyright {
   text-align: center;
   margin-top: 50px;
+}
+
+/*
+service_page
+*/
+
+#main {
+  display: inline-block;
+}
+
+.page_service {
+  display: flex;
+  justify-content: center;
+}
+
+.page_service .page_head {
+  color: 333333;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 30px 0;
+  background-color: #cccccc;
+  text-align: center;
+}
+
+.page_service .s_list {
+  padding: 0px;
+}
+
+.page_service .s_list li {
+  display: flex;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.page_service .s_list li .txt {
+  margin-right: 20px;
+}
+
+.page_service .s_list li .txt .ttl {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.page_service .s_list li .txt .head {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.page_service .s_list li .txt .descri {
+  font-size: 15px;
 }
