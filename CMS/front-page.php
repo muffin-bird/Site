@@ -24,23 +24,23 @@
           <ul>
             <li>
               <a href="">
-                <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" alt=""></div>
+                <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" width="350" height="200" alt=""></div>
                 <div class="type">業種 : Web制作会社</div>
-                <div class="client">XXX株式会社</div>
+                <div class="client">クライアント : XXX株式会社</div>
               </a>
             </li>
             <li>
               <a href="">
-                <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" alt=""></div>
+                <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" width="350" height="200" alt=""></div>
                 <div class="type">業種 : Web制作会社</div>
-                <div class="client">XXX株式会社</div>
+                <div class="client">クライアント : XXX株式会社</div>
               </a>
             </li>
             <li>
               <a href="">
-                <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" alt=""></div>
+                <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" width="350" height="200" alt=""></div>
                 <div class="type">業種 : Web制作会社</div>
-                <div class="client">XXX株式会社</div>
+                <div class="client">クライアント : XXX株式会社</div>
               </a>
             </li>
           </ul>
