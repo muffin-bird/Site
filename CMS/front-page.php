@@ -21,7 +21,16 @@
       <section class="works_list">
         <div class="sec_head">制作実績</div>
         <div class="new_list">
+          <?php
+          $args = array(
+            'post_type' => 'works', // 投稿タイプスラッグ
+            'posts_per_page' => 3
+          );
+          $the_query = new WP_Query($args);
+          if($the_query->havepost()):
+          ?>
           <ul>
+            <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li>
               <a href="">
                 <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" width="350" height="200" alt=""></div>
