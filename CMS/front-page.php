@@ -23,37 +23,27 @@
         <div class="new_list">
           <?php
           $args = array(
-            'post_type' => 'works', // 投稿タイプスラッグ
+            'post_type' => 'works',
             'posts_per_page' => 3
           );
           $the_query = new WP_Query($args);
-          if($the_query->havepost()):
+          if($the_query->have_posts()):
           ?>
           <ul>
             <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li>
-              <a href="">
-                <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" width="350" height="200" alt=""></div>
-                <div class="type">業種 : Web制作会社</div>
-                <div class="client">クライアント : XXX株式会社</div>
+              <a href="<?php the_permalink() ;?>">
+                <div class="img"><img src="<?php echo CFS()->get('thumbnail') ;?>" width="350" height="200" alt=""></div>
+                <div class="type">業種 : <?php echo CFS()->get('type') ;?></div>
+                <div class="client">クライアント : <?php echo CFS()->get('client') ;?></div>
               </a>
             </li>
-            <li>
-              <a href="">
-                <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" width="350" height="200" alt=""></div>
-                <div class="type">業種 : Web制作会社</div>
-                <div class="client">クライアント : XXX株式会社</div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img"><img src="<?php bloginfo("template_url") ;?>/img/sample_works_thumb.jpg" width="350" height="200" alt=""></div>
-                <div class="type">業種 : Web制作会社</div>
-                <div class="client">クライアント : XXX株式会社</div>
-              </a>
-            </li>
+            <?php endwhile; ?>
           </ul>
-            <div class="btn_stn"><a href="<?php bloginfo('url') ;?>/works">一覧をみる</a></div>
+          <?php wp_reset_postdata(); ?>
+          <?php else: ?>
+          <?php endif; ?>  
+          <div class="btn_stn"><a href="<?php bloginfo('url') ;?>/works">一覧をみる</a></div>
         </div>
       </section>
       <section class="front_news">
