@@ -229,3 +229,37 @@ service_page
 .page_service .s_list li .txt .descri {
   font-size: 15px;
 }
+
+/*
+single_works_page
+*/
+
+.single_works_container {
+  display: flex;
+  justify-content: center;
+  margin: 0 50px;
+}
+
+.works_txt {
+  margin-left: 20px;
+}
+
+.works_txt .info {
+  margin-bottom: 10px;
+}
+
+.works_txt .workflow {
+  margin-bottom: 10px;
+}
+
+.works_txt .outcome {
+  margin-bottom: 10px;
+}
+
+.btn_link {
+  text-align: center;
+  color: #fff;
+  border: 1px solid #3399cc;
+  background-color: #3399cc;
+  padding: 10px 0;
+}
