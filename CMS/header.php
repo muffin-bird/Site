@@ -48,6 +48,10 @@
     <div class="header_img"><!-- お問い合わせ用 -->
       <img src="<?php bloginfo('template_url') ;?>/img/header_contact.jpg" alt="image">
     </div>
+    <?php }else if(is_post_type_archive('works')){ ?>
+    <div class="header_img"><!-- 制作実績用 -->
+      <img src="<?php bloginfo('template_url') ;?>/img/header_works.jpg" alt="image">
+    </div>
     <?php }else if(is_archive()){ ?>
     <div class="header_img"><!-- ニュース用 -->
       <img src="<?php bloginfo('template_url') ;?>/img/header_news.jpg" alt="image">
