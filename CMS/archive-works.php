@@ -2,7 +2,7 @@
 
 <div id="content" class="page_wrap w_inner">
 <div class="sec_head">制作実績</div>
-        <div class="new_list">
+        <div class="archive_list">
           <?php
           $args = array(
             'post_type' => 'works',
@@ -15,7 +15,7 @@
             <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li>
               <a href="<?php the_permalink() ;?>">
-                <div class="img"><img src="<?php echo CFS()->get('thumbnail') ;?>" width="350" height="200" alt=""></div>
+                <div class="img"><img src="<?php echo CFS()->get('thumbnail') ;?>" width="300" height="180" alt=""></div>
                 <div class="type">業種 : <?php echo CFS()->get('type') ;?></div>
                 <div class="client">クライアント : <?php echo CFS()->get('client') ;?></div>
               </a>
